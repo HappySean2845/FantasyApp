@@ -1,0 +1,356 @@
+{
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"
+	],
+	"id": "H532DB418",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "Fantasy",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "1.0.0",/*应用版本名称*/
+		"code": ""
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"fullscreen": false,
+	"launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": ""
+	},
+	"permissions": {
+		"Events": {
+			"description": "应用扩展事件"
+		},
+		"Invocation": {},
+		"Zip": {},
+		"Maps": {},
+		"File": {},
+		"Audio": {},
+		"Speech": {},
+		"Camera": {},
+		"Device": {},
+		"Runtime": {},
+		"Gallery": {},
+		"Storage": {},
+		"Webview": {},
+		"Barcode": {},
+		"Uploader": {},
+		"NativeUI": {},
+		"Contacts": {},
+		"NativeObj": {},
+		"Messaging": {},
+		"Proximity": {},
+		"Navigator": {},
+		"Downloader": {},
+		"Orientation": {},
+		"Geolocation": {},
+		"Accelerometer": {},
+		"XMLHttpRequest": {},"Payment":{}
+	},
+	"plus": {
+		"popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，none为无侧滑返回功能，hide为侧滑隐藏Webview窗口。参考ask.dcloud.net.cn/article/102*/
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": false,
+			"delay": "0"
+		},
+		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保���给应用签名，暂不使用*/
+		"distribute": {"plugins":{"payment":{"alipay":{"description":"阿里支付","scheme":""}}},
+			"debug": false,/*可选，是否为debug模式，可取值：true表示debug模式运行，false表示release模式运行，默认值为false*/
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包���用密钥库中证书的别名*/
+				"permissions": [
+					"<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+					"<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+					"<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+					"<uses-permission android:name=\"android.permission.SEND_SMS\"/>",
+					"<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+					"<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+					"<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+					"<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+					"<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+					"<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+					"<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+					"<uses-feature android:name=\"android.hardware.camera\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_SMS\"/>",
+					"<uses-permission android:name=\"android.permission.READ_SMS\"/>",
+					"<uses-permission android:name=\"android.permission.CAMERA\"/>"
+				]
+			},
+			"orientation": [
+				"portrait-primary"
+			],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					"auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "unpackage/res/icons/57x57.png", /*iPhone3/3GS程序图标，分辨率：57x57*/
+						"retina": "unpackage/res/icons/114x114.png", /*iPhone4程序图标，分辨率：114x114*/
+						"retina7": "unpackage/res/icons/120x120.png", /*iPhone4S/5/6程序图标，分辨率：120x120*/
+						"retina8": "unpackage/res/icons/180x180.png", /*iPhone6 Plus程序图标，分辨率：180x180*/
+						"spotlight-normal": "unpackage/res/icons/29x29.png", /*iPhone3/3GS Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "unpackage/res/icons/58x58.png", /*iPhone4 Spotlight搜索程序图标，分辨率：58x58*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png", /*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png", /*iPhone4设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png", /*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
+						"settings-retina8": "unpackage/res/icons/87x87.png"
+					},
+					"ipad": {
+						"normal": "unpackage/res/icons/72x72.png", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "unpackage/res/icons/144x144.png", /*iPad高分屏程序图标，分辨率：144x144*/
+						"normal7": "unpackage/res/icons/76x76.png", /*iPad iOS7程序图标，分辨率：76x76*/
+						"retina7": "unpackage/res/icons/152x152.png", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "unpackage/res/icons/50x50.png", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "unpackage/res/icons/100x100.png", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						"spotlight-normal7": "unpackage/res/icons/40x40.png",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png",/*iPad设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png"
+					}
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "img/logo.png", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "img/logo.png",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": "img/logo.png",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
+						"retina47": "img/logo.png",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
+						"retina55": "img/logo.png",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
+						"retina55l": "img/logo.png"
+					},
+					"ipad": {
+						"portrait": "img/logo.png", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "img/logo.png",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "img/logo.png", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "img/logo.png", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "img/logo.png", /*iPad iOS7竖屏启动图��，分辨率：768x1024*/
+						"portrait-retina7": "img/logo.png",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "img/logo.png", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": "img/logo.png"
+					}
+				},
+				"android": {
+					"mdpi": "img/logo.png", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "img/logo.png", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "img/logo.png", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "img/logo.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": "img/logo.png"
+				}
+			},
+			"debug": false
+		}
+	},
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"js/mui.js",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"js/plugin/jquery.js",
+					"footer.html",
+					"img/icon/footer.png",
+					"js/manifest.js",
+					"js/iframe.js",
+					"css/iframe.css",
+					"js/update.js",
+					"js/compat.js",
+					"css/android.css",
+					"js/offline.js",
+					"network_broken.html",
+					"js/viewport_compat.js",
+					"img/bg_network.png",
+					"img/btn_network.png",
+					"js/plugin/mui.min.js",
+					"js/plugin/online.js",
+					"img/traffic_green.png",
+					"img/traffic_red.png",
+					"login.html",
+					"img/index.png",
+					"img/03.jpg",
+					"img/02.jpg",
+					"css/login.css",
+					"img/01.jpg",
+					"css/mui.css",
+					"img/animation/04.png",
+					"img/animation/01.png",
+					"img/animation/02.png",
+					"img/animation/bg.png",
+					"img/animation/03.png",
+					"user/login.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"network_broken.html": {
+				"resources": [
+					"img/btn_network.png",
+					"img/bg_network.png",
+					"js/compat.js",
+					"js/viewport_compat.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"login.html": {
+				"resources": [
+					"css/style.css",
+					"css/mui.css",
+					"forget_password.html",
+					"reg.html",
+					"js/mui.min.js",
+					"js/mui.js",
+					"index.html",
+					"css/mui.min.css",
+					"img/btn/blue.png",
+					"css/login.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"reg.html": {
+				"resources": [
+					"js/mui.min.js",
+					"login.html",
+					"css/mui.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"forget_password.html": {
+				"resources": [
+					"login.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"user/login.html": {
+				"resources": [
+					"img/btn/blue.png",
+					"img/logo2.png",
+					"js/plugin/jquery.js",
+					"css/login.css",
+					"img/icon/checked.png",
+					"user/forget_password.html",
+					"user/reg.html",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"into.html",
+					"index.html",
+					"img/icon/index_pop_close.png",
+					"user/forget_password01.html",
+					"img/wrong.png",
+					"img/right.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"user/forget_password.html": {
+				"resources": [
+					"user/login.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"user/reg.html": {
+				"resources": [
+					"user/login.html",
+					"user/set_password.html",
+					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"into.html": {
+				"resources": [
+					"network_broken.html",
+					"js/iframe.js",
+					"css/iframe.css",
+					"img/btn_network.png",
+					"img/bg_network.png",
+					"img/icon/footer.png",
+					"js/plugin/online.js",
+					"user/login.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"user/set_password.html": {
+				"resources": [
+					"user/reg.html",
+					"user/nickname.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"user/forget_password01.html": {
+				"resources": [
+					"user/login.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"user/nickname.html": {
+				"resources": [
+					"user/set_password.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/user/reg.html": {
+				"resources": [
+					"img/btn/blue.png",
+					"js/plugin/jquery.js",
+					"css/login.css",
+					"fonts/mui.ttf",
+					"js/err.js",
+					"js/login.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": []
+		}
+	},
+	"unpackage": [
+		"css/mui.css"
+	]
+}

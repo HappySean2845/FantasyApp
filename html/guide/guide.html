@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>天天NBA</title>
+		<script type="text/javascript" src="../../js/viewport_compat.js"></script>
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">-->
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<style>		
+			body{ background-color: #fff !important;}	
+			.mui-slider-indicator .mui-indicator{width: 26px;height: 26px;}
+    		.mui-slider-indicator {bottom: 50px;}
+		</style>
+	</head>
+
+	<body>
+		<div id="slider" class="mui-slider mui-fullscreen">
+			<div class="mui-slider-group">
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<div class="item-logo">
+						<img src="../../img/animation/01.png" />
+					</div>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<div class="item-logo">
+						<img src="../../img/animation/02.png" />
+					</div>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<div class="item-logo">
+						<img src="../../img/animation/03.png" />
+					</div>
+				</div>
+				<!-- 第四张 -->
+				<div class="mui-slider-item">
+					<div class="item-logo">
+						<img src="../../img/animation/04.png" />				
+					</div>
+				</div>					
+				<!-- 第五张 -->
+				<div class="mui-slider-item">
+					<div class="item-logo">						
+						<a href="../user/login.html" id="close">
+							<img src="../../img/index.png" />
+						</a>						
+					</div>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script>
+			mui.back = function() {};
+			mui.plusReady(function() {
+				if(mui.os.ios){
+					plus.navigator.setFullscreen(true);
+				}
+				plus.navigator.closeSplashscreen();
+			});
+			立即体验按钮点击事件
+			document.getElementById("close").addEventListener('tap', function(event) {
+				plus.storage.setItem("lauchFlag", "true");
+				plus.navigator.setFullscreen(false);
+				plus.webview.currentWebview().close();
+			}, false);
+			//图片切换时，触发动画
+			document.querySelector('.mui-slider').addEventListener('slide', function(event) {
+			 	//var index = event.detail.slideNumber+1;
+			});			
+		</script>
+	</body>
+</html>

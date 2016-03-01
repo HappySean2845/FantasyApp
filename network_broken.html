@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>返回大厅</title>
+		<script type="text/javascript" src="js/viewport_compat.js"></script>
+		<script src="js/plugin/jquery.js"></script>
+<!--		<script src="js/plugin/online.js"></script>
+-->		<style>
+			*{margin:0;padding:0;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+			body{  width: 100%; min-height: 800px; background: url(img/bg_network.png) center top no-repeat; color: #fff; text-align: center;}
+			body h1{ margin-top:50%;}
+			.btn_network{background: url(img/btn_network.png) center top no-repeat; width:483px; height: 115px; display: inline-block; margin-top: 20%; }
+		</style>
+	</head>
+	<body>
+			<h1>滴！当前网络技术犯规！！！<br /> 点击返回大厅继续游戏。。。</h1>			
+			<!-- class="mui-action-back"<span class="btn_network"></span>-->
+			<a href="#" class="btn_network"></a>
+	</body>
+</html>
+<script src="js/mui.min.js"></script>
+<!--<script>
+	mui.init({
+		swipeBack:true //启用右滑关闭功能
+	});
+</script>-->
+<script>
+	window.onLineHandler = function() {
+		$('a').attr('href','http://10.103.241.2/room/publicRoomList/')
+	};
+	window.offLineHandler = function() {
+		$('a').attr('href','#')
+	};
+
+//			function plusReady() {
+//				if (plus.networkinfo.getCurrentType() == 1) {
+//					$('.iframe_content').attr('src', 'network_broken.html')
+//					//window.location.href = "network_broken.html"; //跳转断网页面
+//				}
+//			}
+//			if (window.plus) {
+//				plusReady();
+//			} else {
+//				document.addEventListener("plusready", plusReady, false);
+//			}
+</script>

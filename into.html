@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>天天NBA</title>		
+		<script type="text/javascript" src="js/viewport_compat.js"></script>
+		<!--<script src="js/plugin/online.js"></script>-->
+		<script src="js/plugin/jquery.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/iframe.css">
+		<link rel="stylesheet" type="text/css" href="css/login.css">
+	</head>	
+	<body>	
+		<iframe class="network_broken" id="network_broken" src="network_broken.html" width="100%" frameborder="0" style="display: none;"></iframe>
+       	<iframe class="iframe_content" id="iframe_content" src="http://10.103.241.2/player/index?openid=oOjJXv2o-hqV0D9aPe-HhKBokFc8&nickname=%F0%9F%90%BB%F0%9F%90%A0&headimgurl=http://wx.qlogo.cn/mmopen/IBibic3D4vOyTuTLsR63peNGicc5XOiaYgUVcxUHyRteFoECDVfHuickzxW0pUCfV0qPFtJSJy2OmEA3p1JzHrDeoOTENlHsjMwfX/0&hashCode=MGFmOTdhNWQ1NmVkMzU4YmJmYzdjMWNjYTg3YTE0NDgyZjg1YTI2Ng==&qa=true" width="100%" frameborder="0"></iframe>
+		<footer>
+			<ul>
+				<li class="selected"><div></div><span>大厅</span></li>
+				<li><div></div><span>赛况</span></li>
+				<li><div></div><span>数据</span></li>
+			    <li><div></div><span>商城</span></li>
+				<li><div></div><span>我</span></li>				
+			</ul>			
+		</footer>
+	</body>
+</html>
+<script src="js/iframe.js"></script>
+<script src="js/err.js"></script>
+<script src="js/login.js"></script>
+<!--<script src="js/mui.min.js"></script>-->
+<!--<script src="js/update.js" type="text/javascript" charset="utf-8"></script>-->
+<script>
+//	var iframeContent = document.getElementById('iframe_content');
+//	var networkBroken = document.getElementById('network_broken');
+//	window.onLineHandler = function() {
+//		iframeContent.style.display = 'block';
+//		networkBroken.style.display = 'none';
+//	};
+//	window.offLineHandler = function() {
+//		iframeContent.style.display = 'none';
+//		networkBroken.style.display = 'block';
+//	};
+	
+//	mui.init({
+//		swipeBack: false,
+//		//statusBarBackground: '#f7f7f7',
+//		gestureConfig: {
+//			doubletap: true
+//		},
+//		subpages: [{
+//			id: 'iframe_content',
+//			url: 'http://10.103.241.2/player/index?openid=oOjJXvwLfuUevKm4O3BYLzAN8XRA&nickname=%E8%B5%B7%E8%88%9E%E5%BC%84%E6%B8%85%E5%BD%B1&headimgurl=http://wx.qlogo.cn/mmopen/1sQY9zV2GNHZA1BxGlh1oJIj9s0H5IsgP3FuAyuv0dFCVH7Tq6OrEeiaqdAskbdwJyujkxe2BOMYTTiaop6paUksPgQ9pxQ3iac/0&hashCode=YzQyMTFiMzk1YmY5MmYyN2Q2ZWZmZDFiZTMzNDhhYWJkM2RhNGRjYg==&qa=true',
+//			width:"100%",
+//			frameborder:"0",
+//			//className:'iframe_content'
+////			styles: {
+////				width:'100%',
+////				height:'100%',
+//////				top: '45px',
+//////				bottom: 0,
+////				bounce: 'vertical'
+////			}
+//		}]
+//	});
+
+//			function plusReady() {
+//				if (plus.networkinfo.getCurrentType() == 1) {
+//					$('.iframe_content').attr('src', 'network_broken.html')
+//					//window.location.href = "network_broken.html"; //跳转断网页面
+//				}
+//			}
+//			if (window.plus) {
+//				plusReady();
+//			} else {
+//				document.addEventListener("plusready", plusReady, false);
+//			}
+
+	//提交密码
+	
+		//window.localStorage['user_name']=user_name;
+		console.log(window.localStorage['user_account']);
+		console.log(window.localStorage['passWord']);
+		console.log(window.localStorage['user_name']);
+		console.log(window.localStorage['user_token']);
+		user_token = window.localStorage['user_token'];
+		user_name = window.localStorage['user_name'];
+		intoGame(user_token,user_name);
+		//HaveNickNameToken();	
+		//intoGame(user_token,user_name);
+		//HaveNickNameToken(window.localStorage['user_token'],window.localStorage['user_name']);
+		
+//		if(window.localStorage['user_name']!=false){
+//			//alert('有昵称！');
+//		    //$('#nickname_checked').css({display:'block',zIndex:'1000'});
+//			$('#nickname_checked').css({display:'none',zIndex:'0'});
+//			//
+//			//window.location.href='../../into.html'
+//		}else{
+//			//alert('没有昵称！');
+//			$('#nickname_checked').css({display:'block',zIndex:'1000'});
+//		}
+		
+		
+		
+//		if(window.localStorage['user_name']!=false){
+//			$('#nickname_checked').css({display:'none',zIndex:'0'});
+//			//
+//			//window.location.href='../../into.html'
+//		}else{
+//			$('#nickname_checked').css({display:'block',zIndex:'1000'});
+//		}
+
+
+</script>

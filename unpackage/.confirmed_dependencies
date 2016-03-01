@@ -1,0 +1,56 @@
+{
+  "index.html": {
+    "resources": [
+      "img/animation/04.png",
+      "img/animation/01.png",
+      "js/viewport_compat.js",
+      "img/index.png",
+      "js/mui.min.js",
+      "img/animation/02.png",
+      "img/animation/bg.png",
+      "css/mui.min.css",
+      "img/animation/03.png",
+      "user/login.html"
+    ],
+    "refer": []
+  },
+  "user/login.html": {
+    "resources": [
+      "img/btn/blue.png",
+      "img/logo2.png",
+      "js/plugin/jquery.js",
+      "css/login.css",
+      "img/icon/checked.png",
+      "user/forget_password.html",
+      "user/reg.html"
+    ],
+    "refer": []
+  },
+  "user/forget_password.html": {
+    "resources": [
+      "user/login.html"
+    ],
+    "refer": [
+      "user/login.html"
+    ]
+  },
+  "user/reg.html": {
+    "resources": [
+      "user/login.html"
+    ],
+    "refer": [
+      "user/login.html"
+    ]
+  },
+  "html/user/reg.html": {
+    "resources": [
+      "img/btn/blue.png",
+      "js/plugin/jquery.js",
+      "css/login.css",
+      "fonts/mui.ttf",
+      "js/err.js",
+      "js/login.js",
+      "css/mui.min.css"
+    ]
+  }
+}

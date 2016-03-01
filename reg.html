@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/login.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="login.html"></a>
+			<h1 class="mui-title">注册</h1>
+		</header>
+		<div class="mui-content">
+			<form class="mui-input-group">
+				<div class="mui-input-row" id="phone_box">
+					<label>手机号</label>
+					<input id='user_account' type="number" pattern="[0-9]*" placeholder="请输入手机号" />
+                    <div id="icon_verify_phone" class="icon_verify"></div>
+				</div>
+				<div class="mui-input-row" id="email_box">
+					<label>邮箱</label>
+					<input id='email' type="email" placeholder="请输入邮箱">
+                    <div id="icon_verify_email" class="icon_verify"></div>
+				</div>
+				<div class="mui-input-row">
+					<label>验证码</label>
+					<input id='validate_code' type="number" placeholder="请输入验证码">
+                    <div id='icon_verify_code' class="icon_verify"></div>
+					<span id="get_verify_code" class="code_blue">获取验证码</span>
+					<!--<span class="code_gray">重新获取(59)</span>-->
+				</div>
+			</form>
+			<div class="tips_red"></div>
+			<div class="mui-content-padded">
+				<div class="btn_b_box">
+					<button id='reg' class="btn_blue btn_one">下一步</button>
+				</div>
+			</div>
+		</div>		
+	</body>
+</html>
+<script src="js/plugin/jquery.js"></script>
+<script src="js/err.js"></script>
+<script src="js/login.js"></script>
+<script>
+		console.log(window.localStorage['user_account']);
+		console.log(window.localStorage['passWord']);
+		console.log(window.localStorage['user_name']);
+		console.log(window.localStorage['user_token']);
+</script>
+

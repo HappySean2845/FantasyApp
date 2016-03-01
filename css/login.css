@@ -1,0 +1,69 @@
+/*login*/
+.ui-page-login,body{width:100%;height:100%;margin:0px;padding:0px;}
+.mui-content{height:100%;}
+.area{margin:20px auto 0px auto;}
+.mui-input-group{margin-top:10px;}
+.mui-input-group:first-child{margin-top:20px;}
+.mui-input-group label{width:24%;}
+.mui-input-row label~input,.mui-input-row label~select,.mui-input-row label~textarea{float:left;}
+.mui-checkbox input[type=checkbox],.mui-radio input[type=radio]{top:6px;}
+.mui-btn{padding:10px;}
+.link-area{display:block;margin-top:25px;text-align:center;}
+.spliter{color:#bbb;padding:0px 8px;}
+.oauth-area{position:absolute;bottom:20px;left:0px;text-align:center;width:100%;padding:0px;margin:0px;}
+.oauth-area .oauth-btn{display:inline-block;width:50px;height:50px;background-size:30px 30px;background-position:center center;background-repeat:no-repeat;margin:0px 20px;border:solid 1px #ddd;border-radius:25px;}
+.oauth-area .oauth-btn:active{border:solid 1px #aaa;}
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea{margin-top:1px;}
+.mui-content-padded{text-align:center;}
+.mui-plus.mui-android header.mui-bar{display:none;}
+.mui-plus.mui-android .mui-bar-nav~.mui-content{padding:0;}
+.mui-slider-item img{height:100%}
+.mui-input-row label{padding:10px 0px 10px 15px;}
+.code_blue,.code_gray{position:absolute;top:0;right:0px;color:#fff;width:105px;height:40px;line-height:40px;text-align:center;display:inline-block;}
+.code_blue{background-color:#296bb5;}
+.code_gray{background-color:#999;}
+.oauth-area{bottom:8px;}
+.ui-page-login, body,.mui-content{height: auto;}
+.forget_pw{width:80%;margin:60px auto 0;font-size:20px}
+.mui-icon-clear:before, .mui-icon-close-filled:before{content:inherit;background:url(../img/error.png) !important;}
+.icon_verify{width:20px;height:20px;position:absolute;right:10px;top:10px;background-size:20px 20px;}
+.icon_right{background-image:url(../img/right.png);}
+.icon_wrong{background-image:url(../img/wrong.png)}
+.verify_code{right:110px;}
+#select{width:70px;font-size:17px;line-height:40px}
+#validate_code{width:150px;}
+/*common*/
+button{border:none;background:none;}
+.mlr10{margin:0 10px;}
+/*login*/
+.login_logo{text-align:center ;margin:30px auto 0;}
+/*按钮*/
+.btn_blue{line-height:1.5;font-size:1em;color:#fff;font-weight:bold;display:inline-block;border-radius:5px;overflow:hidden;cursor:pointer}
+.btn_blue{background:url(../img/btn/blue.png) center repeat-x;}
+.btn_blue_light{background:url(../img/btn/blue-light.png) center repeat-x;}
+.bgcolor45 .btn_b_box{width:94%;margin:0 3%;}
+.btn_b_box .btn_blue{margin-top:10px;}
+.btn_b_box .btn_one{margin:18px auto;}
+.btn_one{width:94%;}
+.btn_pre60{width:60%;}
+.btn_pre30{width:30%;margin:0 10px;}
+.btn_two{width:45%;margin:0 8px;}
+.btn_three{width:28%;margin:0 10px;}
+/*条款相关*/
+.checkbox_wrap{margin:0 auto;margin-right:5px;color:#007aff;font-size:14px;display:inline-block;vertical-align:middle}
+.checkbox,.checkbox.selected{width:36px;height:34px;float:left;}
+.checkbox{background:url(../img/icon/checkbox.png) center top no-repeat;}
+.checkbox.selected{background:url(../img/icon/checked.png) center top no-repeat;}
+.agree{display:block;float:left;margin-left:5px;margin-top:5px;}
+.rule_wrap{width:200px;text-align:left;display:inline-block;vertical-align:middle;color:#007aff;font-size:14px}
+.rule_wrap span{text-decoration:underline;color:#007aff;}
+.pop{position:fixed;left:2%;top:18%;width:96%;height:400px;background:#FFF;overflow:hidden;border-radius:10px;padding:10px;z-index:200;display:none;}
+.pop h1,.pop h2{font-size: 16px;}
+.table_border{margin:0 auto;text-align:center;border-right:solid 1px #ccc;border-bottom:solid 1px #ccc;font-size: 12px;color: #8f8f94;}
+.table_border td{border-left:solid 1px #ccc;border-top:solid 1px #ccc;height:40px;}
+.pop_close{width:48px;height:48px;background:url(../img/icon/index_pop_close.png) 5px 2px no-repeat;position:absolute;top:0;right:0;z-index:5;}
+.pop_con{width:100%;height:390px;overflow-x:hidden;overflow-y:scroll}
+.mask{width:100%;height:100%;position:fixed;top:0;left:0;background:rgba(0,0,0,.65);z-index:101;display:none}
+.tips_red{text-align: center;height:30px;padding-top:10px;color: red;display:none}
+#icon_verify_code{right:120px}
+
