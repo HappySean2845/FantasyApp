@@ -178,3 +178,5 @@ w.ultZeroize=function(v,l){
 	return z+v;
 };
 })(window);
+
+var storage = window.localStorage;
